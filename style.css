@@ -50,3 +50,9 @@ section::after {
   );
   border-radius: 50%;
 }
+
+.icon {
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
