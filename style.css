@@ -7,3 +7,46 @@
 body {
   overflow: hidden;
 }
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(#a200ff, rgba(0, 0, 0, 1)),
+    url(https://images.unsplash.com/photo-1558481795-7f0a7c906f5e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1546&q=80);
+  background-blend-mode: multiply;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    rgba(195, 0, 255, 0.75),
+    transparent,
+    transparent
+  );
+  border-radius: 50%;
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(
+    rgba(195, 0, 255, 0.75),
+    transparent,
+    transparent
+  );
+  border-radius: 50%;
+}
