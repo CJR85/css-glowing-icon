@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inconsolata', monospace;
 }
 
 body {
@@ -55,4 +58,5 @@ section::after {
   width: 200px;
   height: 200px;
   z-index: 1;
+  text-align: center;
 }
